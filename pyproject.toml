@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "simplepyetl"
+version = "0.0.1"
+dependencies = ["pyspark", "chispa", "pandas"]
+requires-python = ">=3.11"
+authors = [{ name = "Pargorn Puttapirat" }]
+maintainers = [{ name = "Pargorn Puttapirat" }]
+description = "Example ETL project with PySpark"
+readme = "README.md"
+license = { file = "LICENSE" }
+keywords = ["etl", "pyspark", "spark"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Developers",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+[project.urls]
+Homepage = "https://github.com/marchputt/pyspark-python-etl"
+# Documentation = "https://readthedocs.org"
+Repository = "https://github.com/marchputt/pyspark-python-etl"
+# "Bug Tracker" = "https://github.com/me/spam/issues"
+# Changelog = "https://github.com/me/spam/blob/master/CHANGELOG.md"
