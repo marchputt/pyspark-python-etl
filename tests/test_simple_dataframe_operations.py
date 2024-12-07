@@ -29,6 +29,12 @@ class TestSimpleDataFrameOperations(unittest.TestCase):
 
         df_result = split_first_last_name(df_input)
 
+        # Showing the expected and result DataFrames for better understanding -- can be commented out
+        print("Expected DataFrame:")
+        df_expected.show()
+        print("Result DataFrame:")
+        df_result.show()
+
         assert_df_equality(df_result, df_expected, ignore_nullable=True)
 
     def test_that_will_fail(self):
