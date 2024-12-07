@@ -23,3 +23,9 @@ jobs:
     - name: Run unittests
       run: |
         python -m unittest discover -s tests
+    
+    - name: Publish Test Results
+      uses: actions/upload-artifact@v2
+      with:
+        name: test-results
+        path: tests/test-results.xmlame: Run Unittests
