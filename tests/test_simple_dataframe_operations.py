@@ -31,6 +31,9 @@ class TestSimpleDataFrameOperations(unittest.TestCase):
 
         assert_df_equality(df_result, df_expected, ignore_nullable=True)
 
+    def test_that_will_fail(self):
+        self.assertEqual(1, 2)
+
 
 if __name__ == "__main__":
     unittest.main()
