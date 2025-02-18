@@ -11,10 +11,10 @@ def split_first_last_name(df_input: DataFrame) -> DataFrame:
     Returns:
         DataFrame: Output DataFrame with two columns "first_name" and "last_name".
     """
-    output_col = (
+    df_out = (
         df_input.withColumn("first_name", F.split(df_input["name"], " ")[0])
         .withColumn("last_name", F.split(df_input["name"], " ")[1])
         .drop("name")
     )
 
-    return output_col
+    return df_out
