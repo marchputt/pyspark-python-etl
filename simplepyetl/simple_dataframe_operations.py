@@ -18,3 +18,4 @@ def split_first_last_name(df_input: DataFrame) -> DataFrame:
     )
 
     return df_out
+
