@@ -1,18 +1,38 @@
-# pyspark-python-etl
+# simplepyetl
 
-Boilerplate ETL project using a framework based on PySpark
+Boilerplate ETL project using PySpark
 
-- In this example repository, we are going to use `simplepyetl` as an example project name.
+## Installation
 
-# Development setup
+```bash
+pip install -e .
+```
 
-For developers to develop some ETL processing with this starter repository, PySpark must be instlalled.
+## Development Setup
 
-- Follow this guide to install PySpark: https://www.datacamp.com/tutorial/installation-of-pyspark
-- Create virtual environment
-- Install the framework using editable mode: `pip install -e .`
-- (Optionally, for VS Code) Take advantage of test discovery functionality: https://code.visualstudio.com/docs/python/testing#_configure-tests
+1. Create virtual environment
+2. Install development dependencies:
+   ```bash
+   pip install -r requirements-dev.txt
+   ```
+3. Install package in editable mode:
+   ```bash
+   pip install -e .
+   ```
 
-## GitHub Actions for Unit Testing
+## Usage
 
-The repository is configured to use GitHub Actions to run unit tests automatically. This ensures that the codebase remains stable and that new changes do not introduce any regressions. The workflow is defined in a YAML file located in the `.github/workflows` directory.
+```python
+from simplepyetl import split_first_last_name
+```
+
+## Testing
+
+Run tests:
+```bash
+python -m unittest discover -s tests
+```
+
+## GitHub Actions
+
+Automated unit testing runs on push and pull requests via `.github/workflows/test_unittest.yaml`.

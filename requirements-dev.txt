@@ -1,0 +1,5 @@
+pyspark
+pandas
+chispa
+pytest
+pytest-cov

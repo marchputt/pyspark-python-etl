@@ -4,10 +4,7 @@ simplepyetl package
 This package contains modules for the simplepyetl project.
 """
 
-# Import necessary modules
-# from .module1 import Class1, function1
-# from .module2 import Class2, function2
+from .simple_dataframe_operations import split_first_last_name
 
-# Define package-level variables or functions if needed
-# def package_function():
-#     pass
+__version__ = "0.0.1"
+__all__ = ["split_first_last_name"]
